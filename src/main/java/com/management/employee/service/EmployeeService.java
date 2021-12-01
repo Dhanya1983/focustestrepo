@@ -75,8 +75,8 @@ public class EmployeeService implements EmployeeServiceInterface {
 	public Employee getEmployeeById(int empid) {
 		// Retrieve an Employee By Id
 		try {
-			log.info("getEmployeeById in EmployeeService invoked ");
-			log.info("Employee Id fetched is "+empid);
+			//log.info("getEmployeeById in EmployeeService invoked ");
+			//log.info("Employee Id fetched is "+empid);
 			return employeeRepository.findById(empid).get();
 			
 		//} catch (IllegalArgumentException e) {

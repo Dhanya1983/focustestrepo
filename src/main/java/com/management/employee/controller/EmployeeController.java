@@ -71,9 +71,9 @@ public class EmployeeController {
 	@GetMapping("/getEmployee/{empid}")
 	public ResponseEntity<?> getEmployeeById(@PathVariable("empid") int empid) {
 		try {
-			log.info("getEmployeeById in EmployeeController invoked ");
+			//log.info("getEmployeeById in EmployeeController invoked ");
 			Employee employeeById = employeeServiceInterface.getEmployeeById(empid);
-			log.info("Employee Id fetched is "+employeeById);
+			//log.info("Employee Id fetched is "+employeeById);
 			return new ResponseEntity<Employee>(employeeById,HttpStatus.OK);
 		} catch (BusinessException e) {
 			ControllerException controllerException = new ControllerException(e.getErrorCode(), e.getErrorMessage());
