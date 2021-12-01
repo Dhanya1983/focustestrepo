@@ -1,0 +1,1 @@
+insert into Department_TBL (DEPARTMENT_ID,DEPARTMENT_HEAD,DEPARTMENT_NAME) values (1,"TESTING","IT");
